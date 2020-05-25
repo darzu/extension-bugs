@@ -1,21 +1,16 @@
 // Add your code here
+enum FontHeight {
+    Z,
+    B,
+}
 
 namespace foobar {
-    //% block="foo $txt || as $fg on $bg"
-    //% blockId="foo_create"
-    //% blockSetVariable="textSprite"
-    //% expandableArgumentMode="toggle"
-    //% bg.defl=0
-    //% bg.shadow="colorindexpicker"
-    //% fg.defl=1
-    //% fg.shadow="colorindexpicker"
-    //% txt.defl="foo"
-    //% group="Create"
-    //% weight=100
+    //% block="foo $a $b || $c $d"
     export function foo(
-        txt: string = "foo",
-        bg: number = 0,
-        fg: number = 1): number {
+        a: number,
+        b: number,
+        c: number,
+        d: number): number {
         return 3
     }
 }
